@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaquaries.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Travel website project</title>
+</head>
+
+<body>
+    <header class="header" id="main-page">
+        <nav>
+            <div class="row">
+                <img src="img/logo.png" alt="Logo" class="logo">
+                <div class="weather-app" id="weather-show">
+                    <div class="weather-right">
+                        <div class="location"><span id="location">&nbsp;</span></div>
+                        <div class="temperature"><span id="temperature"></span>&deg;</div>
+                    </div>
+                </div>
+                <ul class="main-nav">
+                    <li><a href="#main-page">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#open_form">Sign up</a></li>
+                    <li><a href="#flights" class="btn btn-ghost js--scroll-to-flights">Book now</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary-main">Welcome to ExploreBeauty</span>
+                <span class="heading-primary-sub">Explore Beauty Of Nature</span>
+            </h1>
+            <a class="btn btn-full js--scroll-to-destination" href="#destination-sec">Explore now</a>
+        </div>
+    </header>
+
+    <section class="about js--section-about" id="about">
+        <div class="about-heading">
+            <h2>Smarties ideas for your holiday</h2>
+            <p class="text-about">
+                Hello, we're CompanyName, your new premium holiday planning service. We here to find best ideas for your special needs. So
+                let us take care of you, we're really good at it, we promise!
+            </p>
+        </div>
+        <div class="row about-group animatable fadeUp">
+            <div class="about-item">
+                <i class="ion-map icon-big"></i>
+                <h3>Amazing tour packages</h3>
+                <p>We can help you find the precise message to clearly speak to who you are as a company.</p>
+            </div>
+            <div class="about-item">
+                <i class="ion-android-globe icon-big"></i>
+                <h3>Book top class hotel</h3>
+                <p>Our websites look great, but each page has a clearly defined conversion goal.</p>
+            </div>
+            <div class="about-item">
+                <i class="ion-android-plane icon-big"></i>
+                <h3>Online flight booking</h3>
+                <p>We interlace our creative with solid marketing and branding principles. A strong brand.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="flights js--section-flights" id="flights">
+        <div class="find-flights">
+            <div class="box">
+                <div class="find-flights-container-date">
+                    <label class="label-date">Arrive date</label>
+                    <div class="buttonInside" id="open-calendar">
+                        <input type="text2" id="datepicker-arrive" placeholder="14/07/2019" pattern="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d">
+                        <button class="btn-calendar"><i class="ion-calendar"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="find-flights-container-date">
+                    <label class="label-date">Depart date</label>
+                    <div class="buttonInside" id="open-calendar">
+                        <input type="text2" id="datepicker-depart" placeholder="28/07/2019" pattern="(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\d\d">
+                        <button class="btn-calendar"><i class="ion-calendar"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="box-smaller">
+                <div class="find-flights-container">
+                    <label class="label-date">Adults</label>
+                    <select id="select-adults">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box-smaller">
+                <div class="find-flights-container">
+                    <label class="label-date">Children</label>
+                    <select id="select-children">
+                        <option value="1">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <form class="open-url" target="_blank" action="https://www.skyscanner.net/transport/flights-from/vno/180519/180526/?adults=1&children=0&adultsv2=1&childrenv2=&infants=0&cabinclass=economy&rtn=1&preferdirects=false&outboundaltsenabled=false&inboundaltsenabled=false&ref=home">
+                    <button type="submit" class="btn btn-check" id="check">Check availability</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="packages" id="packages">
+        <div class="row">
+            <h2>This Month's Specials</h2>
+            <div class="gallery">
+                <div class="border">
+                    <div class="gallery-img img-1">
+                        <img src="img/paris.jpg">
+                    </div>
+                    <div class="gallery-info">
+                    <div class="name">France, Paris<b>1199 &euro;</b></div>
+                        <i class="ion-android-star icon-small"></i>
+                        <i class="ion-android-star icon-small"></i>
+                        <i class="ion-android-star icon-small"></i>
+                        <i class="ion-android-star icon-small"></i>
+                        <i class="ion-android-star icon-small"></i>
+                        <div class="desc">
+                            <i class="ion-checkmark-round icon-mini"></i>5 days 6 nights, <br>
+                            <i class="ion-checkmark-round icon-mini"></i>5 star accomodation, <br>
+                            <i class="ion-checkmark-round icon-mini"></i>transportation food facilities</div>
+                            <a class="btn btn-full" href="#" id="btn-book">Book now</a>
+                        </div>
+                </div>
+                <div class="border">
+                    <div class="gallery-img">
+                        <img src="img/barcelona.jpg">
+                    </div>
+                    <div class="gallery-info">
+                        <div class="name">Spain, Barcelona<b>999 &euro;</b></div>
+                            <i class="ion-android-star icon-small"></i>
+                            <i class="ion-android-star icon-small"></i>
+                            <i class="ion-android-star icon-small"></i>
+                            <i class="ion-android-star icon-small"></i>
+                            <i class="ion-android-star icon-small"></i>
+                            <div class="desc">
+                                <i class="ion-checkmark-round icon-mini"></i>5 days 6 nights, <br>
+                                <i class="ion-checkmark-round icon-mini"></i>5 star accomodation, <br>
+                                <i class="ion-checkmark-round icon-mini"></i>transportation food facilities</div>
+                                <a class="btn btn-ghost" href="#" id="btn-book">Book now</a>
+                            </div>
+                    </div>
+                <div class="border">
+                    <div class="gallery-img">
+                        <img src="img/rome.jpg">
+                    </div>
+                    <div class="gallery-info">
+                        <div class="name">Italy, Rome<b>499 &euro;</b></div>
+                        <i class="ion-android-star icon-small"></i>
+                        <i class="ion-android-star icon-small"></i>
+                        <i class="ion-android-star icon-small"></i>
+                        <i class="ion-android-star icon-small"></i>
+                        <i class="ion-android-star icon-small"></i>
+                            <div class="desc">
+                                <i class="ion-checkmark-round icon-mini"></i>5 days 6 nights, <br>
+                                <i class="ion-checkmark-round icon-mini"></i>5 star accomodation, <br>
+                                <i class="ion-checkmark-round icon-mini"></i>transportation food facilities</div>
+                            <a class="btn btn-ghost" href="#" id="btn-book">Book now</a>
+                        </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+    <section class="timer">
+        <h2>Special event</h2>
+        <h4 class="text-about">
+            Join with us within 21 January, 2018 and get upto 40% Discount
+        </h4>
+        <!-- Display the countdown timer -->
+        <p id="demo"></p>
+        <div class="btn-join">
+            <a class="btn btn-full" href="#join">Join now</a>
+        </div>
+    </section>
+
+    <section class="find-us">
+        <div class="row animatable fadeUp">
+            <div class="find-us-item boxy-hover">
+                <i class="ion-ios-location-outline icon-big"></i>
+                <h3>Visit our office</h3>
+                <p>401 Broadway, 24th Floor <br> New York, NY 10013.</p>
+            </div>
+            <div class="find-us-item boxy-hover">
+                <i class="ion-ios-chatboxes-outline icon-big"></i>
+                <h3>Let's talk</h3>
+                <p>Phone: 1-800-222-000 <br> Fax: 1-800-222-002</p>
+            </div>
+            <div class="find-us-item boxy-hover">
+                <i class="ion-ios-email-outline icon-big"></i>
+                <h3>E-mail us</h3>
+                <p>info@yourdomain.com <br> hr@yourdomain.com</p>
+            </div>
+            <div class="find-us-item boxy-hover">
+                <i class="ion-ios-people-outline icon-big"></i>
+                <h3>Customer services</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="destination js--section-destination" id="destination-sec">
+        <div class="row">
+            <h2>Top destination</h2>
+            <h4 class="text-about">
+                Duis aute irure dolor in velit esse cillum dolore eu fugiat nulla
+            </h4>
+        </div>
+        <div class="row">
+            <div class="destination-row">
+                <div class="destination-column">
+                    <div class="image-zoom">
+                        <img src="img/turkey.png" alt="turkey" style="width:100%">
+                        <div class="overlay">
+                            <div class="city-name">Turkey</div>
+                            <h5 class="city-p">
+                                Cras lacinia, velit et lacinia rhoncus, turpis arcu accumsan diam, sit amet ultrices orci massa eu erat. Sed non suscipit
+                                urna. Aenean sit amet nisl sem.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="image-zoom">
+                        <img src="img/australia.jpg" alt="australia" style="width:100%">
+                        <div class="overlay">
+                            <div class="city-name city-name-australia">Australia</div>
+                            <h5 class="city-p">
+                                Cras lacinia, velit et lacinia rhoncus orci massa eu erat. Sed non suscipit urna. Aenean sit amet nisl sem.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="image-zoom">
+                        <img src="img/usa.jpeg" alt="usa" style="width:100%">
+                        <div class="overlay">
+                            <div class="city-name">U.S.A.</div>
+                            <h5 class="city-p">
+                                Cras lacinia, velit et lacinia rhoncus, turpis arcu accumsan diam, sit amet ultrices orci massa eu erat orci massa. Sed non
+                                suscipit urna.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-column">
+                    <div class="image-zoom">
+                        <img src="img/brazil.jpg" alt="brazil" style="width:100%">
+                        <div class="overlay">
+                            <div class="city-name city-name-brazil">Brazil</div>
+                            <h5 class="city-p">
+                                Cras lacinia, velit et lacinia rhoncus, turpis arcu accumsan diam, sit amet ultrices orci massa eu erat.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="image-zoom">
+                        <img src="img/switzerland.jpg" alt="switzerland" style="width:100%">
+                        <div class="overlay">
+                            <div class="city-name">Switzerland</div>
+                            <h5 class="city-p">
+                                Cras lacinia, velit et lacinia rhoncus, turpis arcu accumsan diam, sit amet ultrices orci massa eu erat. Sed non suscipit
+                                urna. Aenean sit amet nisl sem.
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="image-zoom">
+                        <img src="img/china.jpg" alt="china" style="width:100%">
+                        <div class="overlay">
+                            <div class="city-name">China</div>
+                            <h5 class="city-p">
+                                Cras lacinia, velit et lacinia rhoncus, turpis arcu accumsan diam, sit amet ultrices orci massa eu erat. Sed non suscipit
+                                urna. Aenean sit amet nisl sem. Aenean sit amet.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-v">
+                <a href="#" class="btn btn-view">View more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator_section">
+        <div class="calc_headings">
+            <h2>Plan your holidays by your own!</h2>
+            <h4 class="p_calculator">ExploreBeauty will care about your holidays wishes and find the best solutions just
+                for you!</h4>
+        </div>
+        <div class="plan-yourself">
+            <div class="plan_yourself_box">
+                <p class="holiday_header_heading">Wishlist</p>
+                <form onsubmit="sumbitText(); return false;">
+                    <div class="input_form">
+                        <div class="choose_input">
+                            <select name="" onchange="check(this);">
+                                <option disabled selected>Continent</option>
+                                <option value="A1">Europe</option>
+                                <option value="A2">Asia</option>
+                                <option value="A3">North America</option>
+                                <option value="A4">South America</option>
+                                <option value="">Other</option>
+                            </select>
+                            <div id="other_div" style="display: none;">
+                                <input id="newInput" type="text" placeholder="Option" class="input_answer" required>
+                            </div>
+                        </div>
+                        <div class="choose_input">
+                            <select name="" onchange="check2(this);">
+                                <option disabled selected>Season</option>
+                                <option value="B1">Summer</option>
+                                <option value="B2">Autumn</option>
+                                <option value="B3">Winter</option>
+                                <option value="B4">Spring</option>
+                            </select>
+                            <div id="other_div2" style="display: none;">
+                                <input id="newInput" type="text" placeholder="Option" class="input_answer" required>
+                            </div>
+                        </div>
+                        <div class="choose_input">
+                            <select name="" onchange="check3(this);">
+                                <option disabled selected>Main activity</option>
+                                <option value="C1">Mountains</option>
+                                <option value="C2">QC2</option>
+                                <option value="C3">QC3</option>
+                                <option value="C4">QC4</option>
+                                <option value="">Other</option>
+                            </select>
+                            <div id="other_div3" style="display: none;">
+                                <input id="newInput" type="text" placeholder="Option" class="input_answer" required>
+                            </div>
+                        </div>
+                        <div class="choose_input">
+                            <textarea name="suggesion" placeholder="More details..." class="textarea_details"></textarea>
+                        </div>
+                    </div>
+                    <div class="input_email">
+                        <label class="price_label">Email</label>
+                        <input type="text3" id="required_input" class="price_input" placeholder="Enter your email" required>
+                        <button onclick="sumbitText();" type="submit" class="submit_prices_btn">OK</button>
+                    </div>
+                </form>
+                <div class="show_after_pushed_OK">
+                    <p class="holiday_result" id="submit_thank"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form" id="open_form">
+        <form method="post" action="#" class="contact-form" onsubmit="sumbitMessage(); return false;">
+            <div class="drop-box">
+                <div class="row">
+                    <h2>Drop us a line</h2>
+                    <h4>If you have some questions, please, feel free to contact us!</h4>
+                </div>
+                <div class="row">
+                    <div class="subject">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="your-subject">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="subject">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="your-subject">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="subject">
+                        <label for="message">Subject</label>
+                    </div>
+                    <textarea name="message" placeholder="Write your message here..." id="sumbit-message"></textarea>
+                    <div class="send-it">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="send-it">
+                        <input onclick="sumbitMessage();" type="submit" value="Send message">
+                    </div>
+                </div>
+                <div class="show_after_pushed_OK">
+                    <p class="submit_result" id="submit_result"></p>
+                </div>
+
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <img src="img/logo.png" alt="New logo">
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>&copy; 2018 <br> All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- For sticky navigation -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

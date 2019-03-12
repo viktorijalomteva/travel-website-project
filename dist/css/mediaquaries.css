@@ -1,0 +1,373 @@
+/*----------------------------------------------------*/
+/* HEADER */
+/*----------------------------------------------------*/
+@media only screen and (max-width: 800px) {
+  .logo {display: none;}
+}
+
+@media only screen and (max-width: 900px) {
+  .logo {height: 60px;}
+}
+
+@media only screen and (max-width: 1000px) {
+  .weather-app {display: none;}
+}
+
+@media only screen and (max-width: 1200px) {
+  .text-box {
+    width: 70%;
+    height: 30%;
+  }
+  .row {padding: 0 2%;}
+}
+
+@media only screen and (max-width: 1200px) {
+  .weather-app {margin-left: 100px;}
+}
+
+
+/*----------------------------------------------------*/
+/* NAVIGATION */
+/*----------------------------------------------------*/
+@media only screen and (max-width: 700px) {
+    .main-nav li {
+      margin-left: 10px;
+      padding-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-nav {font-size: 16px;}
+}
+  
+/*----------Sticky navigation------------*/
+@media only screen and (max-width: 700px) {
+    .sticky {height: 120px;}
+}
+
+@media only screen and (max-width: 900px) {
+    .sticky .logo {margin-top: -5px;}
+}
+
+
+/*----------------------------------------------------*/
+/* FLIGHTS SEARCH */
+/*----------------------------------------------------*/
+@media only screen and (max-width: 1260px) {
+    .btn-calendar {font-size: 25px;}
+
+    input[type="text2"] {font-size: 22px;}
+}
+
+@media only screen and (max-width: 1170px) {
+  input[type="text2"] { font-size: 20px;}
+
+  .find-flights-container-date,
+  .find-flights-container,
+  input[type="text2"] {text-align: center;}
+
+  .btn-calendar {display: none;}
+
+  #select-adults,
+  #select-children {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .find-flights-container-date {padding: 25px 15px;}
+  .find-flights-container {padding: 25px 10px;}
+}
+
+@media only screen and (max-width: 920px) {
+  .find-flights {
+    height: 80vh;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(3, 150px);
+  }
+
+  .box,
+  .box-smaller {margin-left: 10%;}
+
+  .find-flights-container-date {width: 400%;}
+  .box-smaller {width: 80%;}
+
+  .label-date,
+  input[type="text2"] {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  #select-adults,
+  #select-children {font-size: 18px;}
+
+  .btn-check {
+    position: absolute;
+    margin-left: 35%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .find-flights {
+    height: 120vh;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(1, 500px);
+    grid-template-rows: repeat(4, 150px);
+  }
+
+  .box,
+  .box-smaller,
+  input[type="text2"] {text-align: center;}
+
+  .label-date,
+  input[type="text2"] {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .btn-check {
+    position: absolute;
+    width: 250px;
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 1260px) {
+    .btn-calendar {font-size: 25px;}
+    input[type="text2"] {font-size: 22px;}
+}
+
+  
+/*----------------------------------------------------*/
+/* PACKAGES SECTION */
+/*----------------------------------------------------*/
+@media only screen and (max-width: 1100px) {
+    .gallery {flex-direction: column;}
+  
+    .gallery-img {
+      float: left;
+      width: 400px;
+    }
+  
+    .gallery-info {
+      float: right;
+      margin-left: 20px;
+    }
+  
+    .gallery img {
+      height: 250px;
+      border-radius: 3px;
+    }
+  }
+  
+  @media only screen and (max-width: 1300px) {
+    .gallery img {height: 260px;}
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .border {width: 100%;}
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    .border {
+      width: 90vw;
+      border: none;
+      padding: 10px 0;
+  
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  
+    .border:hover {
+      background-color: transparent;
+      transform: scale(1);
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .border {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .gallery-img {width: 80%;}
+    .gallery-info {width: 75%;}
+  }
+
+/*----------------------------------------------------*/
+/* TIMER SECTION */
+/*----------------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+    #demo {font-size: 40px;}
+    .timer {height: 70vh;}
+}
+
+/*----------------------------------------------------*/
+/* FIND US */
+/*----------------------------------------------------*/
+@media only screen and (max-width: 1000px) {
+    .find-us .row {flex-direction: column;}
+}
+
+@media only screen and (max-width: 1000px) {
+    .boxy-hover {padding: 20px;}
+}
+  
+  @media only screen and (max-width: 800px) {
+    .boxy-hover {font-size: 14px;}
+}
+
+
+/*----------------------------------------------------*/
+/* DESTINATION PHOTO-SECTION */
+/*----------------------------------------------------*/
+@media only screen and (max-width: 1000px) {
+    h5 {
+      font-size: 16px;
+      top: 50%;
+    }
+  
+    .city-name {
+      font-size: 22px;
+      top: 35%;
+    }
+  
+    .city-name-australia,
+    .city-name-brazil {top: 30%;}
+
+    .btn-view {font-size: 14px;}
+}
+  
+@media only screen and (max-width: 800px) {
+    h5 {display: none;}
+    .city-name {top: 15%;}
+}
+
+/*----------------------------------------------------*/
+/* HOLIDAY CALCULATOR */
+/*----------------------------------------------------*/
+@media only screen and (max-width: 1200px) {
+    .plan_yourself_box {
+      max-width: 800px;
+      max-height: 600px;
+      border: 30px solid #eee;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    }
+    .choose_input {margin-left: 15px;}
+  
+    .show_after_pushed_OK {
+      font-size: 100%;
+      line-height: 1.4;
+      margin-top: 18px;
+    }
+}
+  
+@media only screen and (max-width: 1000px) {
+    .plan_yourself_box {
+      max-width: 600px;
+      max-height: 450px;
+      border: 20px solid #eee;
+    }
+  
+    .holiday_header_heading {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  
+    form {width: 100%;}
+  
+    .input_form {
+      justify-items: center;
+      padding: 0;
+    }
+  
+    .choose_input {
+      width: 200px;
+      font-size: 14px;
+      padding: 0;
+    }
+  
+    .input_email {
+      width: 100%;
+      margin-top: 20px;
+      font-size: 14px;
+      margin-left: 0;
+    }
+  
+    .price_input {
+      width: 400px;
+      padding: 8px;
+      margin: 10px;
+    }
+  
+    .submit_prices_btn {
+      font-size: 14px;
+      width: 40px;
+      height: 40px;
+    }
+  
+    .show_after_pushed_OK {
+      font-size: 90%;
+      line-height: 1.4;
+      margin-top: 15px;
+    }
+}
+  
+@media only screen and (max-width: 680px) {
+    .plan_yourself_box {
+      max-width: 400px;
+      max-height: 280px;
+      padding: 10px;
+      border: 10px solid #eee;
+    }
+  
+    .holiday_header_heading {font-size: 18px;}
+  
+    .choose_input {
+      width: 150px;
+      height: 30%;
+    }
+  
+    .choose_input select,
+    .price_input select {padding: 1px;}
+  
+    .textarea_details {height: 50px;}
+  
+    .input_email {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  
+    .price_input {
+      width: 280px;
+      padding: 5px;
+    }
+  
+    .submit_prices_btn {
+      font-size: 12px;
+      width: 40px;
+      height: 40px;
+    }
+  
+    .show_after_pushed_OK {
+      font-size: 70%;
+      line-height: 1.2;
+      margin-top: 5px;
+    }
+}
+
+
+/* For rows */
+@media only screen and (max-width: 1000px) {
+  .about-group{
+        display: flex;
+        flex-direction: column;
+    }
+}
